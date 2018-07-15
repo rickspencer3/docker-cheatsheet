@@ -21,6 +21,14 @@ If the app in the container run on port 80, but you want to access it on port 80
 docker run -p 8080:80 imagename
 ```
 
+Then navigate in the browser to that port (localhost:8080). Or, if you are running docker toolbox, that means that docker is running in a VM, so it will have is own ip address. You can find the local address with this command:
+```
+docker-machine ip default
+```
+
+If that doesn't work, you can [find the name of the docker-machine](https://github.com/prakhar1989/docker-curriculum/issues/27).
+
+
 # managing images and containers
 
 List all pulled or built images:
